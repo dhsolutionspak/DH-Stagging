@@ -28,7 +28,7 @@ class ProjectController extends Controller
 
         //return $lang;
 
-        $data['projects'] = Project::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(10);
+        $data['projects'] = Project::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(1000);
 
         $data['lang_id'] = $lang_id;
 

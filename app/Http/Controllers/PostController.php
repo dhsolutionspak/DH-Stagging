@@ -32,7 +32,7 @@ class PostController extends Controller
 
         //return $lang;
 
-        $data['posts'] = Post::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(10);
+        $data['posts'] = Post::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(1000);
 
         $data['lang_id'] = $lang_id;
 

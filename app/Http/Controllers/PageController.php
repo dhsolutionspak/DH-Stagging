@@ -39,7 +39,7 @@ class PageController extends Controller
 
         //return $lang;
 
-        $data['pages'] = Page::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(10);
+        $data['pages'] = Page::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(100);
 
         $data['lang_id'] = $lang_id;
 

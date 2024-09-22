@@ -23,7 +23,7 @@ class ServiceController extends Controller
 
         //return $lang;
 
-        $data['services'] = Service::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(10);
+        $data['services'] = Service::where('language_id', $lang_id)->orderBy('id', 'DESC')->paginate(100);
 
         $data['lang_id'] = $lang_id;
 
